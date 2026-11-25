@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Blissful Handmade</title>
+    <meta
+      name="description"
+      content="Request a free quote from Blissful Handmade in Benalla. Call 0483 180 019 or email sazza52@outlook.com."
+    />
+    <link rel="icon" href="./images/logo.jpg" type="image/jpeg" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="./" aria-label="Blissful Handmade home">
+          <img class="brand-logo" src="./images/logo.jpg" alt="Blissful Hand Made" width="80" height="80" />
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="site-nav" aria-label="Primary">
+          <a href="./">Home</a>
+          <a href="./services.html">Services</a>
+          <a href="./contact.html" aria-current="page">Contact Us</a>
+        </nav>
+        <a class="header-phone" href="tel:0483180019">0483 180 019</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Contact</p>
+          <h1>Request a quote.</h1>
+          <p>
+            Tell me what you’d love made - colours, charms, timing - and I’ll reply as soon as I can. Available 24/7.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <aside class="contact-card reveal">
+            <h2>Direct contact</h2>
+            <div class="contact-rows">
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:0483180019">0483 180 019</a>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:sazza52@outlook.com">sazza52@outlook.com</a>
+              </div>
+              <div>
+                <strong>Hours</strong>
+                <span>24/7 including emergencies</span>
+              </div>
+              <div>
+                <strong>Area</strong>
+                <span>Benalla · up to 25 km</span>
+              </div>
+            </div>
+          </aside>
+
+          <div class="reveal">
+            <h2 class="section-title" style="margin-bottom: 1.1rem">Send a message</h2>
+            <form class="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contact" />
+              <p class="sr-only">
+                <label>Don't fill this out: <input name="bot-field" /></label>
+              </p>
+
+              <div class="form-row two">
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" required />
+                </div>
+                <div class="field">
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+                </div>
+              </div>
+
+              <div class="form-row two">
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required />
+                </div>
+                <div class="field">
+                  <label for="interest">I'm interested in</label>
+                  <select id="interest" name="interest">
+                    <option value="Custom jewellery">Custom jewellery</option>
+                    <option value="Hair clips">Hair clips</option>
+                    <option value="Ready-made piece">Ready-made piece</option>
+                    <option value="General quote">General quote</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="message">Your idea</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Colours, charms, timing, gift notes…"
+                  required
+                ></textarea>
+              </div>
+
+              <p class="form-note">Prefer a chat? Call <a href="tel:0483180019">0483 180 019</a>.</p>
+              <button class="btn btn-primary" type="submit">Send quote request</button>
+              <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <img class="footer-logo" src="./images/logo.jpg" alt="Blissful Hand Made" width="80" height="80" />
+          <p>Friendly handmade art and jewellery from Benalla.</p>
+        </div>
+        <div>
+          <h3>Pages</h3>
+          <div class="footer-links">
+            <a href="./">Home</a>
+            <a href="./services.html">Services</a>
+            <a href="./contact.html">Contact Us</a>
+          </div>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <div class="footer-contact">
+            <a href="tel:0483180019">0483 180 019</a>
+            <a href="mailto:sazza52@outlook.com">sazza52@outlook.com</a>
+            <span>24/7 · Free quotes</span>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span data-year></span> Blissful Handmade</span>
+        <span>Made with love ♥</span>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
